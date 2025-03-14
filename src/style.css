@@ -55,3 +55,18 @@ body{
     opacity: .5;
 }
 
+.resize-handle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    cursor: nwse-resize;
+    background: linear-gradient(135deg, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
+    border-bottom-right-radius: 8px;
+    z-index: 1000;
+}
+
+.resize-handle:hover {
+    background: linear-gradient(135deg, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.6) 100%);
+}
